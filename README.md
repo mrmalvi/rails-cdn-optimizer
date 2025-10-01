@@ -27,7 +27,35 @@ gem 'rails-cdn-optimizer'
 
 ## Usage
 
-TODO: Write usage instructions here
+Rake Task
+
+Generate a CDN analysis report:
+
+bundle exec rake cdn:analyze
+
+
+RailsCdnOptimizer.configure do |config|
+  config.cdn_host = "https://cdn.yourdomain.com"
+end
+
+ASSET_PATH=spec/tmp_assets bundle exec rake cdn:analyze
+
+
+[
+  {
+    "path": "application.js",
+    "size_kb": 512,
+    "suggestion": "Consider optimizing",
+    "cdn_header": "Cache-Control: max-age=31536000, immutable"
+  },
+  {
+    "path": "style.css",
+    "size_kb": 120,
+    "suggestion": "OK",
+    "cdn_header": "Cache-Control: max-age=31536000, immutable"
+  }
+]
+
 
 ## Development
 
