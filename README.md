@@ -33,10 +33,11 @@ Generate a CDN analysis report:
 
 bundle exec rake cdn:analyze
 
-
+```ruby
 RailsCdnOptimizer.configure do |config|
   config.cdn_host = "https://cdn.yourdomain.com"
 end
+
 
 ASSET_PATH=spec/tmp_assets bundle exec rake cdn:analyze
 
@@ -55,7 +56,7 @@ ASSET_PATH=spec/tmp_assets bundle exec rake cdn:analyze
     "cdn_header": "Cache-Control: max-age=31536000, immutable"
   }
 ]
-
+```
 
 ## Development
 
