@@ -1,23 +1,28 @@
-# Rails::Cdn::Optimizer
+# RailsCdnOptimizer
 
-TODO: Delete this and the text below, and describe your gem
+[![Gem Version](https://badge.fury.io/rb/rails-cdn-optimizer.svg)](https://badge.fury.io/rb/rails-cdn-optimizer)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails/cdn/optimizer`. To experiment with that code, run `bin/console` for an interactive prompt.
+RailsCdnOptimizer analyzes your Rails app's asset pipeline, detects large files, and suggests CDN caching rules to improve performance.
+
+---
+
+## Features
+
+- Analyze `app/assets`, `lib/assets`, and `vendor/assets`
+- Detect large files that may slow down page load
+- Suggest caching headers for CDN optimization
+- Generate JSON report for integration with monitoring tools
+- Easy integration with Rake tasks
+
+---
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your Gemfile:
 
-Install the gem and add to the application's Gemfile by executing:
+```ruby
+gem 'rails-cdn-optimizer'
 
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
-```
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 ```
 
 ## Usage
