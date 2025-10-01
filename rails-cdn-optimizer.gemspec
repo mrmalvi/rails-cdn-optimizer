@@ -8,14 +8,17 @@ Gem::Specification.new do |spec|
   spec.authors = ["mrmalvi"]
   spec.email = ["malviyak00@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
-  spec.required_ruby_version = ">= 3.2.0"
+  spec.summary       = "Rails CDN Optimizer: Analyze and optimize asset pipeline with CDN suggestions."
+  spec.description   = "Rails Cdn Optimizer analyzes your Rails app's asset pipeline, detects large files, suggests CDN caching rules, and helps improve performance automatically."
+  spec.homepage      = "https://github.com/mrmalvi/rails-cdn-optimizer"
+  spec.license       = "MIT"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+  spec.required_ruby_version = ">= 2.6.0"
+
+  # Metadata for RubyGems.org
+  spec.metadata["homepage_uri"]    = spec.homepage
+  spec.metadata["source_code_uri"] = "https://github.com/mrmalvi/rails-cdn-optimizer"
+  spec.metadata["changelog_uri"]   = "https://github.com/mrmalvi/rails-cdn-optimizer/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
